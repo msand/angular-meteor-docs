@@ -32,7 +32,7 @@ export let improveThisCodeResolver = (markdownUrlBase: string, tutorial: Tutoria
     }
 
     return {
-      url: filePath + lineAppend;
+      url: filePath + lineAppend
     }
   });
 };
