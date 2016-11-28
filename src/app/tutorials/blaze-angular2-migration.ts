@@ -1,4 +1,6 @@
-import {TutorialDefinition} from 'angular-meteor-tutorials-infrastructure';
+import {TutorialDefinition, ParsedPatchDefinition} from 'angular-meteor-tutorials-infrastructure';
+import {improveThisCodeResolver} from "./improve-code-resolver";
+import {Http} from "@angular/http";
 
 const markdownUrlBase = '/master/manuals/';
 
@@ -7,6 +9,9 @@ export const BLAZE_TO_ANGULAR2_MIGRATION: TutorialDefinition = {
   name: 'Blaze to Angular 2 Migration',
   gitHub: 'dotansimha/angular2-blaze-migration-tutorial',
   baseRoute: 'angular2',
+  improveCodeUrlResolve: (tutorial: TutorialDefinition, patchDetails: ParsedPatchDefinition, filename: string, stepNumber: string, http: Http) => {
+    return improveThisCodeResolver(markdownUrlBase, tutorial, patchDetails, filename, stepNumber, http);
+  },
   steps: [
     {
       url: '/introduction',

@@ -1,5 +1,6 @@
-import {TutorialDefinition} from 'angular-meteor-tutorials-infrastructure';
-
+import {TutorialDefinition, ParsedPatchDefinition} from 'angular-meteor-tutorials-infrastructure';
+import {improveThisCodeResolver} from "./improve-code-resolver";
+import {Http} from "@angular/http";
 const markdownUrlBase = '/master/manuals/';
 
 export const ANGULAR1_METEOR_SOCIALLY : TutorialDefinition = {
@@ -7,6 +8,9 @@ export const ANGULAR1_METEOR_SOCIALLY : TutorialDefinition = {
   name: 'Angular-Meteor - Socially',
   gitHub: 'Urigo/meteor-angular-socially',
   baseRoute: 'angular1',
+  improveCodeUrlResolve: (tutorial: TutorialDefinition, patchDetails: ParsedPatchDefinition, filename: string, stepNumber: string, http: Http) => {
+    return improveThisCodeResolver(markdownUrlBase, tutorial, patchDetails, filename, stepNumber, http);
+  },
   steps: [
     {
       url: '/bootstrap',

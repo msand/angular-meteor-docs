@@ -1,5 +1,6 @@
-import {TutorialDefinition} from 'angular-meteor-tutorials-infrastructure';
-
+import {TutorialDefinition, ParsedPatchDefinition} from 'angular-meteor-tutorials-infrastructure';
+import {improveThisCodeResolver} from "./improve-code-resolver";
+import {Http} from "@angular/http";
 const markdownUrlBase = '/master/manuals/';
 
 export const ANGULAR1_WHATSAPP_IONIC_CLI: TutorialDefinition = {
@@ -7,6 +8,9 @@ export const ANGULAR1_WHATSAPP_IONIC_CLI: TutorialDefinition = {
   name: 'WhatsApp Clone with Meteor and Ionic CLI',
   gitHub: 'Urigo/IonicCLI-Meteor-WhatsApp',
   baseRoute: 'ionic',
+  improveCodeUrlResolve: (tutorial: TutorialDefinition, patchDetails: ParsedPatchDefinition, filename: string, stepNumber: string, http: Http) => {
+    return improveThisCodeResolver(markdownUrlBase, tutorial, patchDetails, filename, stepNumber, http);
+  },
   steps: [
     {
       url: '/bootstrapping',
