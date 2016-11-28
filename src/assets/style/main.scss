@@ -625,6 +625,13 @@ diffbox-container {
   visibility: hidden;
 }
 
+.improve-code {
+  a {
+    color: black;
+    padding: 6px;
+  }
+}
+
 @import "../../app/app.component.scss";
 @import "../../app/website/main-page/main.component.scss";
 @import "../../app/website/meteor-rxjs/meteor-rxjs.component.scss";
