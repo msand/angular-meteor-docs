@@ -20,6 +20,16 @@ export const METEOR_RXJS_API_REFERENCE : ApiDefinition = {
   versions: [
     {
       name: 'latest',
+      visibleName: '0.4.7',
+      revision: 'a3b08b7456c2e40b9f847f648c2882e1adb4d121'
+    },
+    {
+      name: '0.4.6',
+      visibleName: '0.4.6',
+      revision: 'e7210b3c7a91a1b6fee924b0bec6d0ee83b49358'
+    },
+    {
+      name: '0.4.5',
       visibleName: '0.4.5',
       revision: 'ec411b57da599a499e9bf183b0edf99d5b27049a'
     },
