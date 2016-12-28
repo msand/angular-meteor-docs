@@ -26,7 +26,7 @@ And in two different Terminal tabs:
     $ npm start
     $ npm run watch
 
-Open you browser [http://localhost:3000](http://localhost:3000) !
+Open your browser [http://localhost:3000](http://localhost:3000) !
 
 ## TODO
 
