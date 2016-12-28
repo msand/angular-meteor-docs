@@ -31,4 +31,3 @@ Open your browser [http://localhost:3000](http://localhost:3000) !
 ## TODO
 
 - [ ] Angular 2 API docs missing `bootstrap` page
-- [ ] Add "improve this code" for diff box
