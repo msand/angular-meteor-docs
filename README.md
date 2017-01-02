@@ -26,9 +26,8 @@ And in two different Terminal tabs:
     $ npm start
     $ npm run watch
 
-Open you browser [http://localhost:3000](http://localhost:3000) !
+Open your browser [http://localhost:3000](http://localhost:3000) !
 
 ## TODO
 
 - [ ] Angular 2 API docs missing `bootstrap` page
-- [ ] Add "improve this code" for diff box
