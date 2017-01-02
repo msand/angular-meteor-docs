@@ -9,8 +9,10 @@ import {ConsultingPage} from "./website/support-pages/consulting.component";
 import {SupportPage} from "./website/support-pages/support.component";
 import {TrainingPage} from "./website/support-pages/training.component";
 import {PageNotFound} from "./website/not-found/not-found.component";
+import {LEGACY_REDIRECT_ROUTES} from './legacy-routes';
 
 export const APP_ROUTES: Routes = [].concat(
+  LEGACY_REDIRECT_ROUTES,
   TUTORIALS_ROUTES,
   APIS_ROUTES,
   [
