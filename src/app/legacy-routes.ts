@@ -1,4 +1,5 @@
 const redirectRoutes = {
+  'tutorials/whatsapp/meteor/bootstrapping': 'tutorials/whatsapp2/meteor/setup',
   'ionic-tutorial': 'tutorials/whatsapp2-tutorial',
   'tutorials/whatsapp': 'tutorials/whatsapp2-tutorial',
   'tutorials/whatsapp2': 'tutorials/whatsapp2-tutorial'
@@ -9,6 +10,7 @@ export const LEGACY_REDIRECT_ROUTES = Object.keys(redirectRoutes).map(from => {
 
   return {
     path: from,
-    redirectTo: to
+    redirectTo: to,
+    pathMatch: 'full'
   };
 });
