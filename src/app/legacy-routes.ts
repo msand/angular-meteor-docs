@@ -1,5 +1,4 @@
 const redirectRoutes = {
-  'tutorials/whatsapp/meteor/bootstrapping': 'tutorials/whatsapp2/meteor/setup',
   'ionic-tutorial': 'tutorials/whatsapp2-tutorial',
   'tutorials/whatsapp': 'tutorials/whatsapp2-tutorial',
   'tutorials/whatsapp2': 'tutorials/whatsapp2-tutorial'
