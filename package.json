@@ -20,7 +20,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "angular-meteor-tutorials-infrastructure": "0.0.13",
+    "angular-meteor-tutorials-infrastructure": "0.0.14",
     "@angular/common": "2.2.1",
     "@angular/compiler": "2.2.1",
     "@angular/core": "2.2.1",
