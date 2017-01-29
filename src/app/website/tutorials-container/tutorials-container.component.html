@@ -1,6 +1,7 @@
 <div class="tutorials-container">
   <div class="tutorial-title" *ngIf="tutorial">
     <h1>{{ tutorial.name }}</h1>
+    <h5 class="gh-link"><a target="_blank" [href]="'https://github.com/' + tutorial.gitHub"><md-icon fontSet="fa" fontIcon="fa-github"></md-icon>{{'https://github.com/' + tutorial.gitHub}}</a></h5>
     <h4 *ngIf="getVersions(tutorial.versions).length > 1">Version of {{ getCurrentVersion().displayName }}</h4>
   </div>
   <div class="version-timeline" *ngIf="tutorial && getVersions(tutorial.versions).length > 1">
