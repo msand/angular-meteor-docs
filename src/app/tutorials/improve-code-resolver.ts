@@ -1,13 +1,12 @@
-import {Http} from "@angular/http";
 import {TutorialDefinition, ParsedPatchDefinition} from 'angular-meteor-tutorials-infrastructure';
 import {Observable} from "rxjs";
 
 let cache: {[key: string]: Observable<any>} = {};
 
-export let improveThisCodeResolver = (markdownUrlBase: string, tutorial: TutorialDefinition, patchDetails: ParsedPatchDefinition, filename: string, stepNumber: string, http: Http) => {
+export let improveThisCodeResolver = (markdownUrlBase: string, tutorial: TutorialDefinition, patchDetails: ParsedPatchDefinition, filename: string, stepNumber: string, revision: string, http: any) => {
   const parentStep = stepNumber.split(".")[0];
-  const filePath = 'https://github.com/' + tutorial.gitHub + '/edit' + markdownUrlBase + 'views/step' + parentStep + '.md';
-  const generatedMd = 'https://raw.githubusercontent.com/' + tutorial.gitHub + markdownUrlBase + 'views/step' + parentStep + '.md';
+  const filePath = 'https://github.com/' + tutorial.gitHub + '/edit' + '/' + revision + markdownUrlBase + 'views/step' + parentStep + '.md';
+  const generatedMd = 'https://raw.githubusercontent.com/' + tutorial.gitHub + '/' + revision + markdownUrlBase + 'views/step' + parentStep + '.md';
 
   let obs: Observable<any>;
 

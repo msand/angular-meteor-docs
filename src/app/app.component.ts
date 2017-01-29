@@ -1,8 +1,8 @@
 import {Component, Injectable, ElementRef, Renderer} from '@angular/core';
-import {ANGULAR2_METEOR_SOCIALLY} from './tutorials/angular2-meteor-socially';
 import * as mainCss from "../assets/style/main.scss";
 import {PageTitleService} from "angular-meteor-tutorials-infrastructure";
 import {Router} from "@angular/router";
+import { ANGULAR2_WHATSAPP_IONIC_CLI } from './tutorials/angular2-whatsapp-ionic-cli/index';
 
 @Component({
   selector: 'app',
@@ -21,7 +21,7 @@ export class AppComponent {
   }
 
   getDropdownTutorial() {
-    return ANGULAR2_METEOR_SOCIALLY;
+    return ANGULAR2_WHATSAPP_IONIC_CLI;
   }
 
   isSupportPage() {

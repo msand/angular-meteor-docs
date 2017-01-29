@@ -28,3 +28,8 @@ declare module "striptags" {
 
   export = strip;
 }
+
+
+declare module '*' {
+
+}
