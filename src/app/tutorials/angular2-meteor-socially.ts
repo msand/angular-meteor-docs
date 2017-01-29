@@ -8,6 +8,7 @@ export const ANGULAR2_METEOR_SOCIALLY: TutorialDefinition = {
   name: 'Angular2-Meteor - Socially',
   gitHub: 'Urigo/meteor-angular2.0-socially',
   baseRoute: 'angular2',
+  deprecated: true,
   improveCodeUrlResolve: (tutorial: TutorialDefinition, patchDetails: ParsedPatchDefinition, filename: string, stepNumber: string, revision: string, http: any) => {
     return improveThisCodeResolver(markdownUrlBase, tutorial, patchDetails, filename, stepNumber, revision, http);
   },

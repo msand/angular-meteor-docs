@@ -4,6 +4,9 @@
     <h5 class="gh-link"><a target="_blank" [href]="'https://github.com/' + tutorial.gitHub"><md-icon fontSet="fa" fontIcon="fa-github"></md-icon>{{'https://github.com/' + tutorial.gitHub}}</a></h5>
     <h4 *ngIf="getVersions(tutorial.versions).length > 1">Version of {{ getCurrentVersion().displayName }}</h4>
   </div>
+  <a class="deprecated-tutorial" *ngIf="tutorial && tutorial.deprecated">
+    Note: This tutorial is deprecated and no longer maintained!
+  </a>
   <div class="version-timeline" *ngIf="tutorial && getVersions(tutorial.versions).length > 1">
     <div class="bar"></div>
     <div class="timeline">
