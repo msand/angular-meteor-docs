@@ -11,9 +11,10 @@ export const ANGULAR1_METEOR_SOCIALLY : TutorialDefinition = {
     return improveThisCodeResolver(markdownUrlBase, tutorial, patchDetails, filename, stepNumber, revision, http);
   },
   versions: {
-    '1.0.0': {
+    'master': {
       isLatest: true,
-      routeName: '1.0.0',
+      urlName: '1.0.0',
+      displayName: '1.0.0',
       steps: [
         {
           url: '/bootstrap',

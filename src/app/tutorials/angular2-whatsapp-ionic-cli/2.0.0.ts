@@ -2,7 +2,8 @@ const markdownUrlBase = '/manuals/';
 
 export const V2_0_0 = {
   isLatest: true,
-  routeName: '2.0.0',
+  urlName: '2.0.0',
+  displayName: 'February 2017',
   steps: [
     {
       url: '/setup',

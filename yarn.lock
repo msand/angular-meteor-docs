@@ -166,9 +166,9 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
 
-angular-meteor-tutorials-infrastructure@^0.0.37:
-  version "0.0.37"
-  resolved "https://registry.yarnpkg.com/angular-meteor-tutorials-infrastructure/-/angular-meteor-tutorials-infrastructure-0.0.37.tgz#ff90237048c0092e2606f596657441af8ddbf4d4"
+angular-meteor-tutorials-infrastructure@^0.0.39:
+  version "0.0.39"
+  resolved "https://registry.yarnpkg.com/angular-meteor-tutorials-infrastructure/-/angular-meteor-tutorials-infrastructure-0.0.39.tgz#ee1b8ee3888ccc21a6e51797a5b355de0a385210"
   dependencies:
     graphql-tag "^1.2.3"
     highlight.js "9.7.0"
