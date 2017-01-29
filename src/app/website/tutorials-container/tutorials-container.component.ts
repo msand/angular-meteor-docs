@@ -54,7 +54,9 @@ export class TutorialsContainer {
 
   getVersions(versionsObject) {
     return Object.keys(versionsObject).map((gitRevision) => {
-      return versionsObject[gitRevision];
+      return Object.assign(versionsObject[gitRevision], {
+        gitRevision: gitRevision
+      });
     }).sort((a, b) => {
       return a.isLatest ? 1 : -1;
     });
@@ -66,7 +68,10 @@ export class TutorialsContainer {
 
   getTutorialMarkdownLink() {
     if (this.tutorial && this.step) {
-      return "https://github.com/" + this.tutorial.gitHub + "/edit" + this.step.template;
+      const currentVersion = this.getCurrentVersion();
+      const revision = currentVersion.gitRevision;
+
+      return "https://github.com/" + this.tutorial.gitHub + "/edit/" + revision + this.step.template;
     }
     else {
       return '';
