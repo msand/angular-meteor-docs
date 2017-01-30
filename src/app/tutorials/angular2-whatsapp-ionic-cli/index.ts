@@ -15,7 +15,7 @@ export const ANGULAR2_WHATSAPP_IONIC_CLI: TutorialDefinition = {
   },
   versions: {
     // Git revision => version definition
-    'new-commits': V2_0_0,
-    'master': V1_0_0
+    'release@0.0.1': V2_0_0,
+    'legacy': V1_0_0
   }
 };
