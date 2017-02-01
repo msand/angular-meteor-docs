@@ -3,8 +3,8 @@ const markdownUrlBase = '/manuals/';
 export const V1_0_0 = {
   isLatest: false,
   urlName: '1.0.0',
-  displayName: '2016',
-  dateString: '2016',
+  displayName: 'Legacy Tutorial',
+  dateString: '22.11.2016',
   steps: [
     {
       url: '/setup',
