@@ -2,7 +2,7 @@
   <div class="tutorial-title" *ngIf="tutorial">
     <h1>{{ tutorial.name }}</h1>
     <h5 class="gh-link"><a target="_blank" [href]="'https://github.com/' + tutorial.gitHub"><md-icon fontSet="fa" fontIcon="fa-github"></md-icon>{{'https://github.com/' + tutorial.gitHub}}</a></h5>
-    <h4 *ngIf="getVersions(tutorial.versions).length > 1">Version of {{ getCurrentVersion().displayName }} (Last Update: {{ getCurrentVersion().dateString }})</h4>
+    <h4 *ngIf="getVersions(tutorial.versions).length > 1">{{ getCurrentVersion().displayName }} Version (Last Update: {{ getCurrentVersion().dateString }})</h4>
   </div>
   <a class="deprecated-tutorial" *ngIf="tutorial && tutorial.deprecated">
     Note: This tutorial is deprecated and no longer maintained!
