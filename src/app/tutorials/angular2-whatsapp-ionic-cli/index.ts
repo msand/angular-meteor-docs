@@ -14,7 +14,7 @@ export const ANGULAR2_WHATSAPP_IONIC_CLI: TutorialDefinition = {
     return improveThisCodeResolver(markdownUrlBase, tutorial, patchDetails, filename, stepNumber, revision, http);
   },
   versions: {
-    // Git revision => version definition
+    // Git revision => version definition object
     'release@0.0.1': V2_0_0,
     'legacy': V1_0_0
   }

@@ -40,9 +40,10 @@ export class TutorialsContainer {
     if (versions) {
       for(let i = 0; i < versions.length; i++) {
         if (i > 0) {
-          timeline.push({
-            diffLink: 'http://github.com'
-          });
+          // At the moment, we don't want to create those diff links, so the code is commented
+          // timeline.push({
+          //   diffLink: 'http://github.com'
+          // });
         }
 
         timeline.push(versions[i]);
