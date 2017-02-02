@@ -5,7 +5,7 @@
     <h4 *ngIf="getVersions(tutorial.versions).length > 1">{{ getCurrentVersion().displayName }} Version (Last Update: {{ getCurrentVersion().dateString }})</h4>
   </div>
   <div class="deprecated-tutorial" *ngIf="tutorial && tutorial.deprecated">
-    Note: The Socially 2 tutorial is no longer maintained. Instead, we have a new, better and comprehensive tutorial, integrated with our WhatsApp clone tutorial: <a href="tutorials/whatsapp2/ionic/setup">WhatsApp clone tutorial with Ionic 2, Angular 2 and Meteor</a> (we just moved all features and steps, and implemented them better!)
+    Note: The Socially 2 tutorial is no longer maintained. Instead, we have a new, better and comprehensive tutorial, integrated with our WhatsApp clone tutorial: <a href="tutorials/whatsapp2-tutorial">WhatsApp clone tutorial with Ionic 2, Angular 2 and Meteor</a> (we just moved all features and steps, and implemented them better!)
   </div>
   <div class="version-timeline" *ngIf="tutorial && getVersions(tutorial.versions).length > 1">
     <div class="bar"></div>
