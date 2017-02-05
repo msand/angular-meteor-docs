@@ -41,6 +41,11 @@ export class AppComponent {
         name: 'Blaze to Angular 2 Migration tutorial'
       },
       {
+        link: 'tutorials/socially/angular2/bootstrap',
+        bold: true,
+        name: 'Old Socially Tutorials'
+      },
+      {
         link: 'training',
         bold: true,
         name: 'Custom Training'
