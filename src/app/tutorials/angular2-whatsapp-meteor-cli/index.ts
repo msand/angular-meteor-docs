@@ -2,6 +2,7 @@ import {TutorialDefinition, ParsedPatchDefinition} from 'angular-meteor-tutorial
 import {improveThisCodeResolver} from "../improve-code-resolver";
 import {Http} from "@angular/http";
 import { V2_0_0 } from './2.0.0';
+import { V1_0_0 } from './1.0.0';
 const markdownUrlBase = '/manuals/';
 
 export const ANGULAR2_WHATSAPP_METEOR_CLI: TutorialDefinition = {
@@ -14,6 +15,7 @@ export const ANGULAR2_WHATSAPP_METEOR_CLI: TutorialDefinition = {
   },
   versions: {
     // Git revision => version definition object
-    'master': V2_0_0
+    'master': V2_0_0,
+    'legacy': V1_0_0
   }
 };
