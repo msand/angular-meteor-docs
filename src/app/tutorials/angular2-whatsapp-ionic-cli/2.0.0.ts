@@ -9,12 +9,14 @@ export const V2_0_0 = {
     {
       url: '/setup',
       name: 'Bootstrapping',
-      template: markdownUrlBase + 'templates/step1.md'
+      template: markdownUrlBase + 'templates/step1.md',
+      youtubeVideoId: 'Y3Kikk5rPQk'
     },
     {
       url: '/chats-page',
       name: 'Chats page',
-      template: markdownUrlBase + 'templates/step2.md'
+      template: markdownUrlBase + 'templates/step2.md',
+      youtubeVideoId: 'U_PhcyXbMb8'
     },
     {
       url: '/rxjs',
