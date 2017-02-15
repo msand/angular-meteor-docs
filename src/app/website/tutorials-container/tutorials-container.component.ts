@@ -6,6 +6,8 @@ import {ANGULAR1_METEOR_SOCIALLY} from "../../tutorials/angular-meteor-socially"
 import {DomSanitizer} from "@angular/platform-browser";
 import {Observable} from "rxjs";
 import * as _ from 'lodash';
+import { ANGULAR2_WHATSAPP_IONIC_CLI } from '../../tutorials/angular2-whatsapp-ionic-cli';
+import { ANGULAR2_WHATSAPP_METEOR_CLI } from '../../tutorials/angular2-whatsapp-meteor-cli';
 
 @Component({
   selector: "tutorial",
@@ -111,6 +113,25 @@ export class TutorialsContainer {
           name: "Angular 2",
           link: this.utils.createAbsoluteLink("angular2" + ANGULAR2_METEOR_SOCIALLY.versions['master'].steps[index].url, this.parentRoute),
           active: this.tutorial.id === ANGULAR2_METEOR_SOCIALLY.id
+        }
+      ]
+    }
+
+    if (this.tutorial && (this.tutorial.id === ANGULAR2_WHATSAPP_IONIC_CLI.id || this.tutorial.id === ANGULAR2_WHATSAPP_METEOR_CLI.id)) {
+      let index = this.steps.findIndex((s) => {
+        return s.template == this.step.template;
+      });
+
+      return [
+        {
+          name: "Meteor",
+          link: this.utils.createAbsoluteLink("meteor" + ANGULAR2_WHATSAPP_METEOR_CLI.versions['master'].steps[index].url, this.parentRoute),
+          active: this.tutorial.id === ANGULAR2_WHATSAPP_METEOR_CLI.id
+        },
+        {
+          name: "Webpack",
+          link: this.utils.createAbsoluteLink("ionic" + ANGULAR2_WHATSAPP_IONIC_CLI.versions['master'].steps[index].url, this.parentRoute),
+          active: this.tutorial.id === ANGULAR2_WHATSAPP_IONIC_CLI.id
         }
       ]
     }
