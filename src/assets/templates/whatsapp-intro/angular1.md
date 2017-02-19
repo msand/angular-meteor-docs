@@ -1,55 +1,46 @@
-Facing your next mobile app project, you want to choose the best solutions to start fast while also
-solutions that will stay relevant when your project grows and scales.
+# Your next project
+Facing your next app project, web, mobile or both, you want to choose the best solutions to start fast while also solutions that will stay relevant when your project grows and scales.
 
-The two companies that took the concept of creating a platform with a complete set of tools for your
-development needs and not just another Framework to the furthest are Meteor and Ionic.
+Angular, Meteor and Ionic are all platforms that aim to supply everything you need to write when creating an app.
 
-**Ionic** - Ionic has become one of the most popular solutions to develop hybrid mobile apps fast across
-different platform.
+**Angular** - Angular is a frontend platform that tried to include everything you need in order to build the frontend part of your Angular.  Angular also has their own CLI that is based on Webpack.
+
+**Ionic** - Ionic is based on Angular. it has become one of the most popular solutions to develop hybrid mobile apps fast across different platform.
 
 The Ionic platform includes solutions for prototyping, build, testing, deploying apps, a market of starter
-apps, plugins and themes, CLI integration and push notifications service. (Further writing by an Ionic
-person)
+apps, plugins and themes, CLI integration and push notifications service. (Further writing by an Ionic person)
 
 **Meteor** - But your app needs a full stack solution.
 
-Meteor has become the only open source Javascript platform that supply the complete set of solutions you
-need to create a real time mobile connected apps.
+Meteor has become the only open source Javascript platform that supply the complete set of solutions you need to create a real time mobile connected apps.
 
 The Meteor platform is reliable, fast and easy to develop and deploy and it will also handle all the complexities of your app when it grows and scales with time.
 
-So which one should you choose?
-
-Your best option is to use them both!
-
+# How to choose?
+## Angular Meteor
+Your best option is to use all of them together!
 With angular-meteor, Meteor became the best backend for Angular and Ionic apps.
 
-Both companies made the steps needed to support each other:
+So now you can use the strengthnesses of each of those platform combined the create the ultimate stack for your mobile apps.
 
-- [Meteor now has official support for Angular with it’s 3rd party libraries!](http://info.meteor.com/blog/official-angular-support-with-angular-meteor-1.0.0)
-- [Ionic added official support for Meteor’s packaging system](https://github.com/driftyco/ionic/pull/3133)
+The Angular Meteor project's goal is to make the process of creating apps as easy and fast as possible.
+I do that by keeping track of the latest releases and libraries and comparing them with each other on top of a real apps that our community developers and we support.
 
-So now you we can use the strengthnesses of each of those platform combined the create the ultimate stack
-for your mobile apps.
+But I also believe that education and resources is a crucial part of having a great platform so that's why I've created the tutorial and the tutorial infrastructure that are based on the real WhatsApp and Slack clone app that I use myself and in our community team.
 
-In this post, we will create a full WhatsApp clone, using Angular and the Ionic Framework, using Meteor’s
-realtime collections for the chat and Meteor’s simple Authentication packages for SMS based
-authentication.
+In this tutorial we will create a full WhatsApp and Slack clone, using Angular and the Ionic Framework, using Meteor’s realtime collections for the chat and Meteor’s simple Authentication packages for SMS based authentication.
 
-Both platform has their own CLI and build process solutions.
-
+**But which CLI tool should you choose?**  
+Each platform has it's own CLI and build process solutions.
 You can choose the CLI and build process that you prefer.
 
-So I’ve decided to create to two versions of that blog post, one, on Ionic’s blog, using the Ionic CLI and one, on Meteor’s blog, using the Meteor CLI and build process.
+But which one is best for you? Meteor CLI, Ionic CLI or Angular CLI?
 
-Chapters:
+So I’ve decided to create to two versions of the tutorial, one, using the Ionic CLI and one, using the Meteor CLI and build process.
 
-- Installing the platform and creating a base app
-- Layout, coding style and structure
-- Creating a realtime Meteor server and connect to our existing app
-- Chat view and send messages
-- Users and (SMS) authentication
-- Create and remove chats
-- Privacy and publish/subscribe
+The tutorial is completely based on git and that means that we can compare tools like Ionic, Webpack, Meteor and Angular with an actual git diff between the same app written with each of these flavors.
+So just go in the tutorial and click between the different versions to compare the difference.
 
-Please send feedback and requests about this tutorial on the comments below or open Github issues on the repositories mentioned above.
+> Are we missing a flavor you want? open an issue and help us out
+
+Please send feedback and requests about this tutorial with opening issues on the [Angular Meteor Github repository](https://github.com/urigo/angular-meteor). 
