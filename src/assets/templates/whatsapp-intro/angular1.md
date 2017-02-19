@@ -38,6 +38,9 @@ But which one is best for you? Meteor CLI, Ionic CLI or Angular CLI?
 
 So I’ve decided to create to two versions of the tutorial, one, using the Ionic CLI and one, using the Meteor CLI and build process.
 
+The goal of the tutorial is to learn Angular but we are using Ionic because it's just an addition on top of Angular and it doesn't require to learn a lot of different concepts then just Angular.
+Also, the steps that require in order to use the Ionic CLI with Meteor are almost identical to the steps that require in order to use the Angular CLI.
+
 The tutorial is completely based on git and that means that we can compare tools like Ionic, Webpack, Meteor and Angular with an actual git diff between the same app written with each of these flavors.
 So just go in the tutorial and click between the different versions to compare the difference.
 
