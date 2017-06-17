@@ -1,5 +1,7 @@
 # angular-meteor.com
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Urigo/angular-meteor-docs.svg)](https://greenkeeper.io/)
+
 This repository contains the actual source code of the `angular-meteor.com` website, which uses `angular-meteor-tutorial-infrastructure` in order to generate static HTML website from Git managed tutorials (powered by `tortilla` package).
 
 ## Generate static website for local usage
