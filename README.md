@@ -4,10 +4,14 @@ This repository contains the actual source code of the `angular-meteor.com` webs
 
 ## Generate static website for local usage
 
-    $ npm install
-    $ npm run generate
+    $ yarn
+    $ yarn generate
 
 Then all of the generated HTML files will be in: `./static-website/` directory.
+
+If you have an issue with GitHub API rate-limiter, create a GitHub developer application (https://github.com/settings/developers) and then run as follow:
+
+    $ CLIENT_ID="??" CLIENT_SECRET="??" yarn generate
 
 ## Generate static website for publishing to gh-pages
 
@@ -27,7 +31,3 @@ And in two different Terminal tabs:
     $ npm run watch
 
 Open your browser [http://localhost:3000](http://localhost:3000) !
-
-## TODO
-
-- [ ] Angular 2 API docs missing `bootstrap` page
