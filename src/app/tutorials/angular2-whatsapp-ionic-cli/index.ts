@@ -12,7 +12,7 @@ export const ANGULAR2_WHATSAPP_IONIC_CLI: TutorialDefinition = {
   gitHub: 'Urigo/Ionic2CLI-Meteor-WhatsApp',
   baseRoute: 'ionic',
   improveCodeUrlResolve: (tutorial: TutorialDefinition, patchDetails: ParsedPatchDefinition, filename: string, stepNumber: string, revision: string, http: Http) => {
-    if (revision === 'master' || revision === 'master-history') {
+    if (revision === 'master' || revision === 'master@0.0.7') {
       return improveThisCodeResolver(markdownUrlBase, tutorial, patchDetails, filename, stepNumber, revision, http);
     }
 
@@ -22,6 +22,6 @@ export const ANGULAR2_WHATSAPP_IONIC_CLI: TutorialDefinition = {
     // Git revision => version definition object
     'master': V3_0_0,
     'legacy': V1_0_0,
-    '00975428ffa239ce4229b29a60ddcb934d2735f3': V2_0_0,
+    'master@0.0.7': V2_0_0,
   }
 };
