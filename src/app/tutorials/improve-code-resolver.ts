@@ -21,7 +21,7 @@ export let improveThisCodeResolver = (markdownUrlBase: string, tutorial: Tutoria
     let lineAppend = '';
 
     try {
-      const rgx = new RegExp("\\[\\{]: <helper> \\(diff_step " + stepNumber + "\\).*?[\\s\\S]*?(.*?" + filename.replace(".", "\\.") + ".*?)[\\s\\S]*?\\]", "gi");
+      const rgx = new RegExp("\\[\\{]: <helper> \\(diffStep " + stepNumber + "\\).*?[\\s\\S]*?(.*?" + filename.replace(".", "\\.") + ".*?)[\\s\\S]*?\\]", "gi");
       const match = rgx.exec(generatedMarkdown);
 
       lineAppend = "#L" + (generatedMarkdown.substr(0, match.index).split("\n").length + 6);
