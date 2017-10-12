@@ -1,10 +1,10 @@
 const markdownUrlBase = '/.tortilla/manuals/';
 
-export const V3_0_0 = {
-  isLatest: false,
-  urlName: '3.0.0',
-  displayName: 'Ionic 3',
-  dateString: '15.06.2017',
+export const V3_1_0 = {
+  isLatest: true,
+  urlName: '3.1.0',
+  displayName: 'Ionic 3 + Meteor 1.6',
+  dateString: '12.10.2017',
   steps: [
     {
       url: '/setup',
