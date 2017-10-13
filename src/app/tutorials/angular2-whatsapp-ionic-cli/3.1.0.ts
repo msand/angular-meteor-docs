@@ -4,7 +4,7 @@ export const V3_1_0 = {
   isLatest: true,
   urlName: '3.1.0',
   displayName: 'Ionic 3 + Meteor 1.6',
-  dateString: '12.10.2017',
+  dateString: '2017-10-12',
   steps: [
     {
       url: '/setup',

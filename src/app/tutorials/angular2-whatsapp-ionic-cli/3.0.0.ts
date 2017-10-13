@@ -4,7 +4,7 @@ export const V3_0_0 = {
   isLatest: false,
   urlName: '3.0.0',
   displayName: 'Ionic 3',
-  dateString: '15.06.2017',
+  dateString: '2017-06-15',
   steps: [
     {
       url: '/setup',

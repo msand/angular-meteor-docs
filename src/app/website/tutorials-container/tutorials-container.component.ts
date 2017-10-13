@@ -24,18 +24,21 @@ export class TutorialsContainer {
   private tutorial: TutorialDefinition;
   private step: TutorialStep;
   private steps: TutorialStep[];
+  private gitTagRevision: string;
 
   constructor(private utils: StepsUtils, current: ActivatedTutorial, title: PageTitleService, private sanitizer: DomSanitizer, private parentRoute: ActivatedRoute) {
-    Observable.zip(current.tutorial, current.step, current.steps, (tutorial, step, steps) => {
+    Observable.zip(current.tutorial, current.step, current.steps, current.gitTagRevision, (tutorial, step, steps, gitTagRevision) => {
       return {
         tutorial,
         step,
-        steps
+        steps,
+        gitTagRevision
       }
     }).subscribe((data: any) => {
       this.step = <TutorialStep>data.step;
       this.steps = <TutorialStep[]>data.steps;
       this.tutorial = <TutorialDefinition>data.tutorial;
+      this.gitTagRevision = data.gitTagRevision;
 
       title.setTitle(`Tutorial | ${this.tutorial.name} | ${this.step.name}`);
     })
@@ -57,7 +60,6 @@ export class TutorialsContainer {
         timeline.push(versions[i]);
       }
     }
-
     return timeline;
   }
 
@@ -67,12 +69,20 @@ export class TutorialsContainer {
         gitRevision: gitRevision
       });
     }).sort((a, b) => {
-      return a.isLatest ? 1 : -1;
+      if (a.isLatest && !b.isLatest) {
+        return 1
+      }
+
+      if (b.isLatest && !a.isLatest) {
+        return -1
+      }
+
+      return (new Date(a.dateString)).getTime() - (new Date(b.dateString)).getTime();
     });
   }
 
   versionClass(version) {
-    return _.isEqual(this.steps, version.steps) ? 'current-version' : '';
+    return _.isEqual(this.gitTagRevision, version.gitRevision) ? 'current-version' : '';
   }
 
   getTutorialMarkdownLink() {

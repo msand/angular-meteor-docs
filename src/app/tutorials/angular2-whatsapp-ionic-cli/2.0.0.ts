@@ -4,7 +4,7 @@ export const V2_0_0 = {
   isLatest: false,
   urlName: '2.0.0',
   displayName: 'Socially Merge',
-  dateString: '01.02.2017',
+  dateString: '2017-02-01',
   steps: [
     {
       url: '/setup',
