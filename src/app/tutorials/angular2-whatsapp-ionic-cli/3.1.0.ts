@@ -1,10 +1,10 @@
 const markdownUrlBase = '/.tortilla/manuals/';
 
-export const V2_0_0 = {
-  isLatest: false,
-  urlName: '2.0.0',
-  displayName: 'Socially Merge',
-  dateString: '2017-02-01',
+export const V3_1_0 = {
+  isLatest: true,
+  urlName: '3.1.0',
+  displayName: 'Ionic 3 + Meteor 1.6',
+  dateString: '2017-10-12',
   steps: [
     {
       url: '/setup',
@@ -40,7 +40,7 @@ export const V2_0_0 = {
     },
     {
       url: '/authentication',
-      name: 'Authentication',
+      name: 'Users & Authentication',
       template: markdownUrlBase + 'templates/step7.tmpl'
     },
     {
@@ -50,7 +50,7 @@ export const V2_0_0 = {
     },
     {
       url: '/privacy',
-      name: 'Privacy & Security',
+      name: 'Privacy & Subscriptions',
       template: markdownUrlBase + 'templates/step9.tmpl'
     },
     {
@@ -59,24 +59,44 @@ export const V2_0_0 = {
       template: markdownUrlBase + 'templates/step10.tmpl'
     },
     {
-      url: '/google-maps',
-      name: 'Google Maps',
+      url: '/android-testing',
+      name: 'Android testing',
       template: markdownUrlBase + 'templates/step11.tmpl'
+    },
+    {
+      url: '/google-maps',
+      name: 'Google Maps & Geolocation',
+      template: markdownUrlBase + 'templates/step12.tmpl'
     },
     {
       url: '/file-upload',
       name: 'File Upload & Images',
-      template: markdownUrlBase + 'templates/step12.tmpl'
+      template: markdownUrlBase + 'templates/step13.tmpl'
     },
     {
       url: '/native-mobile',
       name: 'Native Mobile',
-      template: markdownUrlBase + 'templates/step13.tmpl'
+      template: markdownUrlBase + 'templates/step14.tmpl'
+    },
+    {
+      url: '/addressbook',
+      name: 'Addressbook integration',
+      template: markdownUrlBase + 'templates/step15.tmpl'
+    },
+    {
+      url: '/push-notifications',
+      name: 'FCM Push Notifications',
+      template: markdownUrlBase + 'templates/step16.tmpl'
+    },
+    {
+      url: '/facebook',
+      name: 'Facebook authentication',
+      template: markdownUrlBase + 'templates/step17.tmpl'
     },
     {
       url: '/summary',
       name: 'Summary',
-      template: markdownUrlBase + 'templates/step14.tmpl',
+      template: markdownUrlBase + 'templates/step18.tmpl',
       hideCodeDiff: true
     }
   ]
